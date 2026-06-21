@@ -145,7 +145,7 @@ def load_data():
                 'rainfall': np.random.randint(50, 200, 36),
                 'temperature': np.random.randint(15, 38, 36)
             }))
-        return pd.concat(data_frames)
+        return pd.concat(data_frames) 
 
 def build_hybrid_model(df_crop):
     m = Prophet(yearly_seasonality=True, weekly_seasonality=False, daily_seasonality=False)
